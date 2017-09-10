@@ -1,7 +1,7 @@
 $(function () {
 
-	// setWidth();
-	// setHeight();
+	setWidth();
+	setHeight();
 
 	$('.js-min-window').on('click',minWindow)
 	$('.js-close-window').on('click',closeWindow)
@@ -22,8 +22,9 @@ $(function () {
 				},
 				success: (responseText, statusText) => {
 					if (responseText.code==0) {
-						var data = JSON.stringify(responseText)
-						window.location.assign(location.href.split("login")[0]+"list.html?"+"data="+encodeURI(data))
+						var data = JSON.stringify(responseText);
+						setData(data);
+						window.location.href = "list.html";
 					} else{
 						alert(responseText.msg)
 					}

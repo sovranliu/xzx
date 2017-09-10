@@ -12,7 +12,8 @@ $(function() {
 	var loc = location.href;
 	var n1 = loc.length; //地址的总长度
 	var n2 = loc.indexOf("="); //取得=号的位置
-	var id = decodeURI(loc.substr(n2 + 1, n1 - n2)); //从=号后面的内容
+	//var id = decodeURI(loc.substr(n2 + 1, n1 - n2)); //从=号后面的内容
+	var id = getData();
 	var infor = $.parseJSON(id);
 	$('#list .top img').attr('src', infor.data.userInfo.avatarUri);
 	$('#list .top .head span:nth-of-type(1)').text(infor.data.userInfo.name);
