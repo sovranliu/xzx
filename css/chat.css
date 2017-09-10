@@ -1,0 +1,175 @@
+#chat {
+	width: 500px;
+	border: 1px solid #d4d4d4;
+	box-sizing: content-box;
+	
+}
+#chat #chattop {
+	height: 30px;
+	border-bottom: 1px solid #d4d4d4;
+	line-height: 30px;
+	background: #F0F0F0;
+}
+#chat #chattop i:nth-of-type(1) {
+	margin-left: 10px;
+	border: 1px solid #E1E1E8;
+	background: #E1E1E8;
+	padding: 0 10px;
+	border-radius: 16px;
+}
+#chat #chattop i a {
+	color: black;
+	text-decoration: none;
+	font-size: 10px;
+	font-weight: 600;
+}
+
+#chat #chattop .close_btn {
+	float: right; 
+	color: black;
+	text-decoration: none;
+	margin-right: 5px;
+}
+#chat #chattop i:nth-of-type(2),#chat #chattop i:nth-of-type(3) {
+	float: right;
+}
+.icon-cuohao:before {
+	/*background: #E2E3E3;*/
+}
+#chat #chatmiddle {
+	height: 250px;
+	    overflow-y: auto;
+    resize: vertical;
+}
+#chat #chatbottom {
+	background: #EBEBEB;
+	height: 30px;
+	
+}
+#chat #chatbottom a {
+	float: right;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background: #4579AB;
+	color: white;
+	
+}
+#chatmiddle .message {
+    border-bottom: 1px solid #EEE;
+    clear: both;
+    padding: 10px 10px 10px 0;
+    position: relative;
+    margin: 0px 10px;
+}
+#chatmiddle .message .user-logo {
+	float: right;
+	 width: 30px;
+	height: 30px;
+	resize: none;
+	margin-bottom: 30px;
+}
+#chatmiddle .message .user-logo img {
+	width: 100%;
+}
+.clearfix:after {
+	content: '.';
+	background-color: red;
+	display: block;
+	clear: both;          /*bootsrook用法*/
+	height: 0;
+	visibility: hidden;
+	
+}  
+#chatmiddle .message .wrap-text {
+	    float: left;
+    margin-left: 10px;
+    display: inline-block;
+    width: 360px;
+    overflow: hidden;
+    resize: none;
+}
+#chatmiddle .message h5 {
+	    color: #369;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+#chatmiddle .message .wrap-text div {
+    /*margin: 5px 0;*/
+    word-break: break-all;
+    word-wrap: break-word;
+    height: auto;
+    overflow: hidden;
+}
+#chatmiddle .message .wrap-text div p {
+	margin: 0;
+}
+#chatmiddle .message .wrap-ri {
+    float: right;
+    width: 110px;
+    overflow: hidden;
+    resize: none;
+    margin: 0;
+    padding: 0;
+}
+#chatmiddle .message .wrap-ri div {
+    text-align: right;
+    color: #999;
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    clear: both;
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+}
+#chatmiddle .message .wrap-ri div span {
+    display: inline-block;
+    line-height: 18px;
+    vertical-align: bottom;
+    zoom: 1;
+}
+#toolbar {
+	background: #F9F9F9;
+	padding: 12px 0;
+	
+}
+#toolbar img {
+	width: 21px;
+	margin: 0;
+	margin-left: 10px;
+}
+#toolbar .history {
+	background: url(../img/消息记录.png) no-repeat left center;
+	background-size: 21px;
+	text-indent: 21px;
+	display: inline-block;
+	vertical-align: top;
+	float: right;
+	margin-right: 10px;
+}
+#toolbar a {
+	 width: 20px;
+	 background: url(../img/tupian.png) no-repeat left center;
+	 background-size: 20px;
+	 vertical-align: top;
+	 margin-left: 10px;
+}
+#toolbar input {
+	 opacity: 0;
+	 width: 20px;
+	 vertical-align: top;
+	 overflow: hidden;
+}
+#texterea textarea {
+	width: 100%;
+	height: 100px;
+	box-sizing: border-box;
+	border: none;
+	resize: none;
+}
+#texterea textarea:focus {
+	outline:none;
+}

@@ -1,0 +1,395 @@
+/*公用部分*/
+
+.none {
+	display: none;
+}
+html {
+	font-size: 100px;
+}
+body {
+	font-family: Microsoft Yahei, tahoma, arial, 宋体;
+	font-size: 0.2rem;
+	/*background: white;*/
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+ul,
+ol,
+p,
+figure,
+button,
+input,
+li {
+	margin: 0;
+	padding: 0;
+}
+
+ul,
+ol,
+li {
+	list-style: outside none none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	/*width: 100%;*/
+	/*max-width: 100%;*/
+}
+
+.clearfix:after {
+	content: '.';
+	background-color: red;
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+#login {
+	width:4.4rem ;
+	border: 1px solid #E1E1E8;
+	border-radius: 10px;
+
+}
+#login .view {
+	position: absolute;
+	right: 0;
+}
+#login #formsSubmit {
+	padding: 10px 0;
+}
+#login #formsSubmit div label:nth-of-type(1){
+	display: inline-block;
+	margin-left: 1.3rem;
+	vertical-align: middle;
+}
+#login #formsSubmit div input {
+	vertical-align: middle;
+	margin-left: 10px;
+}
+#login h1 {
+	height: 1.6rem;
+	line-height: 1.6rem;
+	text-align: center;
+	background: #288ADD;
+}
+#login .last {
+	text-align:  center;
+}
+#login .check {
+	text-align: center;
+}
+#login button {
+	margin-top: 0.3rem;
+	margin-bottom: 0.3rem;
+	width: 2rem;
+	height: 30px;
+	line-height: 30px;
+	border: none;
+	border-radius: 5px;
+	background: #09A3DC;
+	color: white;
+}
+#login label {
+	color:#656565 ;
+	font-size: 15px;
+}
+
+#list {
+	width: 3rem;
+	/*background:#288ADD ;*/
+	border-radius: 5px;
+	border: 1px solid #CBD5DE;
+	overflow: hidden;
+}
+#list .top .head {
+	padding: 0.2rem;
+	background:#288ADD ;
+}
+#list .top .head img {
+	display: inline-block;
+	vertical-align: middle;
+}
+#list .top .head div {
+	display: inline-block;
+	vertical-align: middle;
+}
+#list .top .head div span {
+	display: block;
+}
+#list .top .view {
+	position: absolute;
+	right: 10px;
+}
+#list .top img {
+	width: 0.5rem;
+	display: inline-block;
+	vertical-align: middle;
+}
+#list .top .head span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#list .middle .colume {
+	box-sizing: border-box;
+	width: 33.3%;
+	/*display: inline-block;*/
+	height: 6rem;
+	background: white;
+	float: left;
+	border:1px solid #CED2D2;
+	
+}
+#list .middle .colume div input {
+	background: url(../img/HBuilder.png) no-repeat left center;
+	text-indent: 0.2rem;
+	background-size: 0.1rem;
+	width: 100%;
+	border: none;
+}
+#list .middle .colume h1 {
+	text-align:  center;
+	font-weight: 400;
+	font-size: 0.3rem;
+	border-bottom: 1px solid black;
+}
+#list .middle .colume ul li {
+	height: 0.4rem;
+	line-height: 0.4rem;
+	text-indent: 0.2rem;
+	background: url(../img/HBuilder.png) no-repeat left center;
+	background-size: 0.1rem;
+}
+#chat .name {
+	color: gray;
+	font-size: 0.3rem;
+}
+.center {
+	 border-collapse: collapse;
+}
+.center .answer{
+	height: 4rem;
+}
+.center .answer td ul li {
+	background: url(../img/HBuilder.png) no-repeat left center;
+	background-size: 20px;
+	text-indent: 20px;
+}
+.center .answer td {
+	position: relative;
+}
+.center .answer ul {
+	position: absolute;
+	top: 0;
+}
+.center .answer td .search {
+	background: burlywood;
+}
+.center,.center td, .center th, .center table, .center td, .center th {
+	text-align: center;
+	border: 1px solid #EEEEEE;
+}
+.center tbody tr td input {
+	border-radius: 10px;
+	width: 1.2rem;
+}
+
+.none {
+	display: none;
+}
+.tab {
+	height: 30px;
+	width: 100%;
+}
+.tab li {
+	display: inline-block;
+	width: 31%;
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+	
+}
+.background {
+	border-bottom: 2px solid #288ADD;
+	color:#288ADD;
+	
+}
+#search {
+	border: none;
+	display: block;
+	width: 100%;
+	background: url(../img/fangdajing.png) #5EA7E5 no-repeat 5px center;
+	background-size: 10px;
+	text-indent: 20px;
+	color: white;
+	height: 30px;
+}
+#list .fire {
+	position: relative;
+	right:0;
+}
+#list .personal {
+	position: relative;
+	right:-300px;
+}
+#list .result {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+	opacity: 1;
+	background: white;
+}
+#list .result h4 {
+	text-align: center;
+	color: #7F7F7F;
+	font-size: 10px;
+	font-weight: 100;
+	height: 30px;
+	line-height: 30px;
+}
+#list .afa {
+	position: relative;
+	right:-300px;
+}
+#list .contactList {
+	height: 300px;
+	overflow-y: auto;
+}
+#list .contactList li {
+	text-indent: 30px;
+	color: red;
+	font-size: 12px;
+	background: url(../dialogs/attachment/fileTypeImages/icon_default.png) no-repeat left center;
+	background-size: 20px;
+	height: 30px;
+	line-height: 30px;
+	
+}
+.hover  {
+	background-color:#CDD8E2!important ;
+}
+#list .bottom {
+	border-top: 1px solid #CBD5DE;
+	height: 30px;
+}
+#list .bottom li {
+	display: inline-block;
+	width: 32%;
+	text-align: center;
+}
+#list .bottom li:nth-of-type(3) {
+	float: right;
+	width: 10%;
+	background: url(../img/yingyong.png) no-repeat center center;
+	height: 30px;
+	background-size: 25px;
+	margin-right: 10px;
+}
+#list .bottom li:nth-of-type(3):hover {
+	background: url(../img/yingyong.png) #CBD5DE no-repeat center center;
+	background-size: 25px;
+}
+/*此处导致不可拖动*/
+.ui-dialog-titlebar {
+	display: none;
+}
+#profile {
+	width: 300px;
+	border: 1px solid #E5E5E5;
+	padding: 5px;
+	position: absolute;
+	top: 100px;
+	left: 400px;
+}
+#profile .edit {
+	color: #00C1F3;
+	font-size: 10px;
+	display: block;
+	margin-bottom: 20px;
+}
+#profile .left {
+	float: left;
+	width: 50%;
+}
+#profile .right {
+	float: left;
+	width: 50%;
+	
+}
+#profile .right label {
+	display: block;
+	font-size: 10px;
+	margin: 5px 0;
+}
+#profile .left img {
+	width: 50px;
+	display: block;
+	margin: 5px auto;
+}
+#profile .left input {
+	color: transparent;
+	display: block;
+	width: 80px;
+	font-size: 10px;
+	margin: 0 auto;
+}
+#profile .view {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+#store {
+	width: 300px;
+	padding: 0;
+	position: absolute;
+	top: 250px;
+	left: 400px;
+	border: 1px solid #E2E3E3;
+	
+}
+#store .top {
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #E0E0E0;
+	background: #288ADD;
+	text-indent: 10px;
+}
+#store .top .view {
+	display: inline-block;
+	float: right;
+}
+.ui-dialog {
+	padding: 0;
+}
+#store #middle {
+	padding: 10px 0;
+}
+#store #middle .single {
+	float: left;
+}
+#store #middle .single img {
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+}
+#store #middle .single h4 {
+	text-align: center;
+	font-weight: 400;
+}
+#store #middle .single {
+	width: 80px;
+}
+#container {
+	position: relative;
+}
