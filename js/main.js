@@ -22,7 +22,7 @@ $(function() {
 	$.each(recentlyArry, function(index, value) {
 		var $li = $('<li>' + value.name + '</li>');
 		$li.css({
-			'background': 'url(' + value.avatarUri + ')  no-repeat left center',
+			'background': 'url(' + value.avatarUri + ')  no-repeat 10px center',
 			'background-size': '20px 20px',
 		})
 		$li.appendTo($('.fire'));

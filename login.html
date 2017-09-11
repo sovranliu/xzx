@@ -18,14 +18,23 @@
 		<i class="js-min-window iconfont icon-jianhao"></i>
 		<i class="js-close-window iconfont icon-cuohao"></i>
 	</div>
-	<h1>兴之讯</h1>
+	<div class="login-header">
+		<img src="img/logo.png" alt="">
+		<p>兴之讯</p>
+	</div>
 	<form id='formsSubmit' action="">
-		<div><label for="loginName">账户</label><input autofocus="autofocus" type="text" name="loginName" id="loginName" value="" placeholder="请输入用户名" /></div>
-		<div><label for="password">密码</label><input type="password" name="password" id="password" value="" placeholder="请输入密码"/></div>
+		<div class="login-item">
+			<label for="loginName">账户</label>
+			<input class="login-input" autofocus="autofocus" type="text" name="loginName" id="loginName" value="" placeholder="请输入用户名" />
+		</div>
+		<div class="login-item">
+			<label for="password">密码</label>
+			<input class="login-input" type="password" name="password" id="password" value="" placeholder="请输入密码"/>
+		</div>
 	</form>
 	<div class="check">
-		<input type="checkbox" name="store" id="" value="" /><label for="store">记住密码</label>
-		<input type="checkbox" name="autologin" id="autologin" value="" /><label for="autologin">自动登录</label>
+		<input type="checkbox" name="store" id="" value="" /><label for="store"> 记住密码</label>
+		<input type="checkbox" name="autologin" id="autologin" value="" /><label for="autologin"> 自动登录</label>
 	</div>
 	<div class='last'><button type="submit" form="formsSubmit">登录</button></div>
 </div>
