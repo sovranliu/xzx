@@ -1,10 +1,10 @@
 $(function () {
 
-	setWidth();
-	setHeight();
+	// setWidth();
+	// setHeight();
 
-	$('.js-min-window').on('click',minWindow)
-	$('.js-close-window').on('click',closeWindow)
+	// $('.js-min-window').on('click',minWindow)
+	// $('.js-close-window').on('click',closeWindow)
 
 	$('#formsSubmit').validate({
 		submitHandler:function(form){
@@ -23,8 +23,9 @@ $(function () {
 				success: (responseText, statusText) => {
 					if (responseText.code==0) {
 						var data = JSON.stringify(responseText);
-						setData(data);
-						window.location.href = "list.html";
+						//todo
+						//setData(data);
+						window.location.href = "list.html?data=" + data;
 					} else{
 						alert(responseText.msg)
 					}
