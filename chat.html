@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>ueditor demo</title>
-		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery.ui.js" type="text/javascript" charset="utf-8"></script>
 		<link rel="stylesheet" type="text/css" href="css/font/iconfont.css" />
 		<link rel="stylesheet" type="text/css" href="css/chat.css"/>
@@ -14,17 +14,15 @@
 		<!-- 加载编辑器的容器 -->
 		<div id="chat" class="chat">
 			<div id="chattop">
-				<i><a href="javascript:;">王旭</a></i>
+				<i><a class="from-name">王旭</a></i>
 				<i class="js-min-window iconfont icon-jianhao"></i>
 				<i class="js-close-window iconfont icon-cuohao"></i>
 			</div>
 			<div id="chatmiddle">
-				<div class='message_box clearfix' style='display: block;'>
-				</div>
 			</div>
 			<div id="toolbar">
 				<a href="javascript:;"><input type="file" name="" id="" value="12120" title="选择文件" /></a>
-				<img src="img/表情.png"/><img src="img/yuyin.png"/>
+				<img src="img/expression.png"/><img src="img/attachments.png"/>
 				<!-- <label class="history" for="">消息记录</label> -->
 			</div>
 			<div id="texterea" class="chat-input">
@@ -35,6 +33,7 @@
 			</div> -->
 		</div>
 		<script src="js/chat.js" type="text/javascript" charset="utf-8"></script>
+
 	</body>
 
 </html>
